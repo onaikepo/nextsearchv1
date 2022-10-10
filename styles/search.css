@@ -1,7 +1,23 @@
 main {
-    background-color: skyblue;
+    background-color: white;
 }
 
 .heading {
     text-align: center;
+    size: 50rem;
+}
+
+.container {
+    text-align: center;
+
+
+}
+
+.p-blue {
+    display: inline;
+    color: blue;
+}
+
+.p-blue:hover {
+    text-decoration: underline;
 }

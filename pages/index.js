@@ -1,4 +1,9 @@
 
+const submitSearch = async (event) => {
+  event.preventDefault();
+  alert(`Did you search for ${event.target.search.value}?`);
+};
+
 export default function Home() {
   return (
     <div className="head">
@@ -10,12 +15,13 @@ export default function Home() {
       <main className="homepage">
         <div className="heading">
           <h1 className="title-text">
-            Welcome to NextSearch: A Next Generation Search Experience.
+            Welcome to <p className="p-blue">NextSearch</p>
+            <br></br>A Next Generation Search Experience.
           </h1>
         </div>
         <br></br>
         <div className="container">
-          <form>
+          <form onSubmit={submitSearch}>
             <label htmlFor="Search Query">Enter Your Search Query Here:</label>
             <input type="text" name="search" id="search-query" />
             <button type="submit">Search</button>
