@@ -26,6 +26,9 @@ export default function Home() {
             <input type="text" name="search" id="search-query" />
             <button type="submit">Search</button>
           </form>
+
+          <br></br>
+
         </div>
 
 
