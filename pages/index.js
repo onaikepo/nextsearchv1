@@ -10,10 +10,10 @@ export default function Home() {
       <main className="homepage">
         <div className="heading">
           <h1 className="title-text">
-            Welcome to NextSearch: A Next Generation Search Experience
+            Welcome to NextSearch: A Next Generation Search Experience.
           </h1>
         </div>
-
+        <br></br>
         <div className="container">
           <form>
             <label htmlFor="Search Query">Enter Your Search Query Here:</label>
