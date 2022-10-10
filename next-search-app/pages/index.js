@@ -12,14 +12,14 @@ export default function Home() {
           <h1 className="title-text">
             Welcome to NextSearch: A Next Generation Search Experience
           </h1>
+        </div>
 
-          <div className="container">
-            <form>
-              <label htmlFor="Search Query">Enter Your Search Query Here:</label>
-              <input type="text" name="search" id="search-query" />
-              <button type="submit">Search</button>
-            </form>
-          </div>
+        <div className="container">
+          <form>
+            <label htmlFor="Search Query">Enter Your Search Query Here:</label>
+            <input type="text" name="search" id="search-query" />
+            <button type="submit">Search</button>
+          </form>
         </div>
 
 
