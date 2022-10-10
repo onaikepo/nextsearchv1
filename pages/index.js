@@ -4,6 +4,7 @@ const submitSearch = async (event) => {
   alert(`Did you search for ${event.target.search.value}?`);
 };
 
+
 export default function Home() {
   return (
     <div className="head">
@@ -30,8 +31,6 @@ export default function Home() {
           <br></br>
 
         </div>
-
-
 
       </main >
     </div>
