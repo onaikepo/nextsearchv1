@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <br></br>
         <div className="container">
-          <form onSubmit={submitSearch} action="airtable">
+          <form onSubmit={submitSearch} action="Airtable">
             <label htmlFor="Search Query">Enter Your Search Query Here:</label>
             <input type="text" name="search" id="search-query" />
             <button type="submit">Search</button>
