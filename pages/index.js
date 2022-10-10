@@ -4,6 +4,7 @@ const submitSearch = async (event) => {
   alert(`Did you search for ${event.target.search.value}?`);
 };
 
+
 export default function Home() {
   return (
     <div className="head">
@@ -21,7 +22,7 @@ export default function Home() {
         </div>
         <br></br>
         <div className="container">
-          <form onSubmit={submitSearch} action="/api/items">
+          <form onSubmit={submitSearch} action="airtable">
             <label htmlFor="Search Query">Enter Your Search Query Here:</label>
             <input type="text" name="search" id="search-query" />
             <button type="submit">Search</button>
@@ -30,8 +31,6 @@ export default function Home() {
           <br></br>
 
         </div>
-
-
 
       </main >
     </div>

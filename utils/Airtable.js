@@ -1,4 +1,4 @@
-const Airtable = require("airtable");
+const Airtable = require("/node_modules/airtable");
 
 // Authenticate
 Airtable.configure({
