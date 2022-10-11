@@ -1,6 +1,11 @@
 export default function AirtableFetch() {
     const Airtable = require("airtable");
 
+    Airtable.configure({
+        endpointUrl: 'https://api.airtable.com',
+        apiKey: 'process.env.AIRTABLE_API_KEY'
+    });
+
     var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
 
     // const base = Airtable.base();
