@@ -10,3 +10,4 @@ export default async (_req, res) => {
         res.status(500).json({ msg: "Something went wrong! 😕" });
     }
 };
+
