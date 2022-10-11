@@ -1,3 +1,4 @@
+/*import React from 'react';
 
 class ErrorBoundary extends React.Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class ErrorBoundary extends React.Component {
         // You can use your own error logging service here
         console.log({ error, errorInfo })
     }
-    render() {
+    render() {  
         // Check if the error is thrown
         if (this.state.hasError) {
             // You can render any custom fallback UI
@@ -38,4 +39,4 @@ class ErrorBoundary extends React.Component {
     }
 }
 
-export default ErrorBoundary
+export default ErrorBoundary*/
