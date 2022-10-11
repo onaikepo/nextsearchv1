@@ -1,7 +1,15 @@
+import '../utils/Airtable'
 
 const submitSearch = async (event) => {
   event.preventDefault();
   alert(`Did you search for ${event.target.search.value}?`);
+
+  /*const data = {
+    query: event.target.search.value,
+  }*/
+
+
+
 };
 
 
@@ -24,11 +32,15 @@ export default function Home() {
         <div className="container">
           <form onSubmit={submitSearch} action="Airtable">
             <label htmlFor="Search Query">Enter Your Search Query Here:</label>
-            <input type="text" name="search" id="search-query" />
+            <input type="text" name="search" id="search" />
             <button type="submit">Search</button>
           </form>
 
           <br></br>
+          <div className="container">
+            <div className="records" id="records">
+            </div>
+          </div>
 
         </div>
 
