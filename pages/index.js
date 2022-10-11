@@ -21,9 +21,9 @@ const submitSearch = async (event) => {
     var baseresult = JSON.stringify(base('Table 1').select({
       fields: ['Website Name', 'Website Description', 'Website URL'],
       view: 'Grid view'
-    });)
-});
-return <div className='container'> {baseresult} </div>
+    }));
+  });
+  return <div className='container'> {baseresult} </div>
 };
 
 
