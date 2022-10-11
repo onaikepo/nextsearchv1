@@ -14,7 +14,7 @@ export default function AirtableFetch() {
         //Only want to return data from ID
         fields: ["ID"],
         // Selecting the first 3 records in Grid view:
-        maxRecords: 2,
+        maxRecords: 3,
         view: "Grid view"
     }).eachPage(function page(records, fetchNextPage) {
         // This function (`page`) will get called for each page of records.

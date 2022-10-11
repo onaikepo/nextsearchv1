@@ -1,7 +1,7 @@
 import AirtableFetch from "../utils/Airtable"
 
-function getResults(AirtableFetch) {
-    return <h2></h2>
+function GetResults(AirtableFetch) {
+    return <h2>Testing</h2>
 }
 
 export default function results() {
@@ -17,7 +17,7 @@ export default function results() {
             <main className="homepage">
                 <div className="heading">
                     <h1 className="title-text">
-                        Welcome to <p className="p-blue">NextSearch</p>
+                        Welcome to <p className="p-blue" href="/index">NextSearch</p>
                         <br></br>A Next Generation Search Experience.
                     </h1>
                 </div>
@@ -25,7 +25,7 @@ export default function results() {
                     <div className="container">
                         <div id="results" className="results">
                             <div>These are the results of what you searched for</div>
-                            <AirtableFetch></AirtableFetch>
+                            <GetResults></GetResults>
                         </div>
 
                     </div>
