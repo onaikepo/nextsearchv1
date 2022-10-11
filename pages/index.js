@@ -9,7 +9,7 @@ const submitSearch = async (event) => {
   }*/
   //var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base();
   var Airtable = require('airtable');
-  var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_TABLE_ID);
+  var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_TABLE_NAME);
   base('Table 1').select({
     view: 'Grid view'
   }).firstPage(function (err, records) {
