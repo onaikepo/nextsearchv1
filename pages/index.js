@@ -36,7 +36,7 @@ export default function Home() {
           <form onSubmit={submitSearch} action="/results">
             <label htmlFor="Search Query">Enter Your Search Query Here:</label>
             <input type="text" name="search" id="search" />
-            <Link href='/results'><button type="submit">Search</button></Link>
+            <button type="submit">Search</button>
           </form>
 
           <br></br>
