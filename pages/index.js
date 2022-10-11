@@ -11,6 +11,7 @@ const submitSearch = async (event) => {
   var Airtable = require('airtable');
   var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
   base('Table 1').select({
+    fields: ['Website Name', 'Website Description', 'Website URL'],
     view: 'Grid view'
   }).firstPage(function (err, records) {
     if (err) { console.error(err); return; }
