@@ -10,11 +10,11 @@ export default function AirtableFetch() {
 
     // const base = Airtable.base();
 
-    base('Table 1').select({
-        //Only want to return data from ID, Website Name and Description
-        fields: ["ID", "Website Name", "Website Description"],
+    base(process.env.AIRTABLE_TABLE_NAME).select({
+        //Only want to return data from ID
+        fields: ["ID"],
         // Selecting the first 3 records in Grid view:
-        maxRecords: 3,
+        maxRecords: 2,
         view: "Grid view"
     }).eachPage(function page(records, fetchNextPage) {
         // This function (`page`) will get called for each page of records.
