@@ -1,5 +1,9 @@
 import AirtableFetch from "../utils/Airtable"
 
+function getResults(AirtableFetch) {
+    return <h2></h2>
+}
+
 export default function results() {
 
     // Pass data to the page via props

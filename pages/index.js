@@ -13,6 +13,7 @@ const submitSearch = async (event) => {
 };
 
 
+
 export default function Home() {
   return (
     <div className="head">
