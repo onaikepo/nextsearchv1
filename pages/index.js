@@ -10,8 +10,8 @@ const submitSearch = async (event) => {
   //var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base();
   const url = "https://api.airtable.com/v0/";
   const pointer = "/Table%201?maxRecords=3&view=Grid%20view";
-  let response = await fetch(url + process.env.AIRTABLE_BASE_ID + pointer), { method: 'GET', headers: process.env.AIRTABLE_API_KEY })
-    console.log(await response.json())
+  let response = await fetch(url + process.env.AIRTABLE_BASE_ID + pointer, { method: 'GET', headers: process.env.AIRTABLE_API_KEY });
+  console.log(await response.json())
 };
 
 
