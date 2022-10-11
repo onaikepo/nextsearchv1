@@ -18,6 +18,11 @@ const submitSearch = async (event) => {
     records.forEach(function (record) {
       console.log('Retrieved', record.get('ID', 'Website Name', "Website Description", "Website URL"));
     });
+    var baseresult = base('Table 1').select({
+      fields: ['Website Name', 'Website Description', 'Website URL'],
+      view: 'Grid view'
+    })
+    return <div className='container'> {baseresult} </div>
   });
 };
 
