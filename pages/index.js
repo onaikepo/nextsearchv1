@@ -8,10 +8,16 @@ const submitSearch = async (event) => {
     query: event.target.search.value,
   }*/
   //var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base();
-  const url = "https://api.airtable.com/v0/";
-  const pointer = "/Table%201?maxRecords=3&view=Grid%20view";
-  let response = await fetch(url + process.env.AIRTABLE_BASE_ID + pointer, { method: 'GET', headers: process.env.AIRTABLE_API_KEY });
-  console.log(await response.json())
+  var Airtable = require('airtable');
+  var base = new Airtable({ apiKey: AIRTABLE_API_KEY }).base(AIRTABLE_TABLE_ID);
+  base('Table 1').select({
+    view: 'Grid view'
+  }).firstPage(function (err, records) {
+    if (err) { console.error(err); return; }
+    records.forEach(function (record) {
+      console.log('Retrieved', record.get('ID', 'Website Name', "Website Description", "Website URL"));
+    });
+  });
 };
 
 
